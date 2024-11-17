@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Orbitron:wght@400..900&family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Orbitron:wght@400..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    unicode-bidi: isolate;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height of the viewport */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f0f8ff; /* Light background for contrast */
+    
+.con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content */
+    margin: 0;
+}
+.f {
+    background: #161819; /* Light blue color */
+    width: 100vw; /* Full width for the header */
+    font-family: 'Abril Fatface', serif;
+    color: white;
+    padding: 30px 20px; /* Adjust padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Align content to left and right */
+    align-items: center; /* Vertically center the content */
+    height: 10vh; /* Full screen height */
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 20px;
+    color: rgb(241, 240, 243);
+    font-family: 'Abril Fatface', serif;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    position: relative;
+}
+
+h3 span {
+    color: rgb(11, 149, 248); /* Color for "KH" */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 8px; /* Increase space between "KH" and "USHI" */
+   text-shadow: 2px 2px 8px rgba(243, 4, 191, 0.6); /* Neon-like shadow */
+   background: linear-gradient(45deg, rgba(245, 3, 3, 0.8), rgba(249, 4, 151, 0.8));
+    -webkit-background-clip: text;
+    color: transparent; /* Makes text appear with gradient */
+    animation: neonGlow 1.5s ease-in-out infinite alternate; /* Glow animation */
+}
+
+/* Adding a subtle animation to create a glowing effect */
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 8px rgba(15, 184, 245, 0.5), 0 0 15px rgba(0, 255, 94, 0.3), 0 0 20px rgba(0, 255, 94, 0.2);
+    }
+    to {
+        text-shadow: 0 0 15px #ff5900cc, 0 0 20px rgba(52, 12, 93, 0.5), 0 0 30px rgba(0, 255, 94, 0.4);
+    }
+}
+
+
+.Nav {
+    
+    display: flex;
+    flex-direction: row; /* Align the navbar links in a row (horizontal) */
+    gap: 20px; /* Space between links */
+    align-items: center; /* Vertically center the links */
+    margin-bottom: 0;
+}
+
+.Nav nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px; /* Padding for better clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: all 0.3s ease;
+}
+
+.Nav a:hover {
+    color: #ffdd57; /* Yellow color on hover */
+    background: #4c7593; /* Light blue background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.Nav a:focus {
+    outline: none; /* Remove outline on focus */
+    border: 2px solid #ffdd57; /* Border effect on focus */
+}
+
+
+/* General Layout */
+.main {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    font-size: 1em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.infocon {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-image: url('P1.png'); /* Set the background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center top; /* Adjust the position to focus on the upper part or face */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    overflow: hidden; /* Hides any content overflowing the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Optional rounded corners */
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Text Overlay */
+.text-overlay {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left */
+    position: absolute;
+    width: 38vw;
+    top: 40%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow around text */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover effect to show text */
+.image-container:hover .text-overlay {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05); /* Slight zoom and slide-up effect on hover */
+}
+
+.hello, .name, .about, .moreabout {
+    margin: 10px 0; /* Add spacing between text elements */
+    font-family: 'Pacifico';
+}
+
+/* Styling for name */
+.name {
+    font-size: 2.5em; /* Increased font size for name */
+    color: crimson;
+    letter-spacing: 3px; /* Space between letters */
+    font-weight: bold; /* Bold text */
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease; /* Add transition for hover animation */
+}
+
+/* Hover effect on name for rotation and scaling */
+.name:hover {
+    transform: rotate(-5deg) scale(1.1); /* Rotate slightly and scale on hover */
+    color: #ff6347; /* Change color on hover */
+    letter-spacing: 4px; /* Increase letter spacing on hover */
+}
+
+/* Styling for 'hello' */
+.hello {
+    font-size: 1.5em; /* Slightly smaller than the name */
+    color: #2cf336; /* Light blue color */
+    font-family: 'DM Serif Display';/* Italicize for visual emphasis */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hello:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    color: #0096b9; /* Darker blue on hover */
+}
+
+/* Styling for 'about' */
+.about {
+    font-size: 1.3em; /* Smaller size for about */
+    color: #f0f0f0; /* Light gray color */
+    font-weight: normal; /* Normal weight */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    color: #b0b0b0; /* Darker gray on hover */
+}
+
+/* Styling for 'more about' */
+.moreabout {
+    font-size: 1.3em; /* Same size as about */
+    color: #ffcc00; /* Golden color */
+    font-weight: normal; /* Normal weight */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.moreabout:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    color: #e5a800; /* Darker gold on hover */
+    font-family: ;
+}
+
+/* Optional: Additional Styling for Buttons */
+.buttons button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00f7ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #0096b9;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+/* Button Styling */
+.buttons button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00f7ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #0096b9;
+    margin: 20px;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Optional for responsiveness */
+@media (max-width: 768px) {
+    .text-overlay {
+        left: 5%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        left: 0%; /* Adjust further for very small screens */
+        text-align: center; /* Center text for very small screens */
+    }
+}

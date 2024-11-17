@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Orbitron:wght@400..900&family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Orbitron:wght@400..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    display: flex;
+    unicode-bidi: isolate;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height of the viewport */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f0f8ff; /* Light background for contrast */
+    
+.con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content */
+    margin: 0;
+}
+.f {
+    background: #161819; /* Light blue color */
+    width: 100vw; /* Full width for the header */
+    font-family: 'Abril Fatface', serif;
+    color: white;
+    padding: 30px 20px; /* Adjust padding for better spacing */
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Align content to left and right */
+    align-items: center; /* Vertically center the content */
+    height: 10vh; /* Full screen height */
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 20px;
+    color: rgb(241, 240, 243);
+    font-family: 'Abril Fatface', serif;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    position: relative;
+}
+
+h3 span {
+    color: rgb(11, 149, 248); /* Color for "KH" */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 8px; /* Increase space between "KH" and "USHI" */
+   text-shadow: 2px 2px 8px rgba(243, 4, 191, 0.6); /* Neon-like shadow */
+   background: linear-gradient(45deg, rgba(245, 6, 6, 0.8), rgba(249, 4, 151, 0.8));
+    -webkit-background-clip: text;
+    color: transparent; /* Makes text appear with gradient */
+    animation: neonGlow 1.5s ease-in-out infinite alternate; /* Glow animation */
+}
+
+/* Adding a subtle animation to create a glowing effect */
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 8px rgba(15, 184, 245, 0.5), 0 0 15px rgba(0, 255, 94, 0.3), 0 0 20px rgba(0, 255, 94, 0.2);
+    }
+    to {
+        text-shadow: 0 0 15px #ff5900cc, 0 0 20px rgba(52, 12, 93, 0.5), 0 0 30px rgba(0, 255, 94, 0.4);
+    }
+}
+
+.Nav {
+    
+    display: flex;
+    flex-direction: row; /* Align the navbar links in a row (horizontal) */
+    gap: 20px; /* Space between links */
+    align-items: center; /* Vertically center the links */
+    margin-bottom: 0;
+}
+
+.Nav nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px; /* Padding for better clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: all 0.3s ease;
+}
+
+.Nav a:hover {
+    color: #ffdd57; /* Yellow color on hover */
+    background: #4c7593; /* Light blue background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.Nav a:focus {
+    outline: none; /* Remove outline on focus */
+    border: 2px solid #ffdd57; /* Border effect on focus */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px; /* Space between heading and skills section */
+}
+
+/* Styling for the intro section */
+.intro {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff7f50, #ff1493, #8a2be2); /* Gradient background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    animation: gradientAnimation 4s ease infinite; /* Animation for gradient */
+}
+
+/* Styling for the image */
+.intro-image {
+    width: 100%;  /* Full width image */
+    max-width: 550px; /* Max width for the image */
+    height: 500px;  /* Set height */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    margin: 10 auto; /* Center image horizontally */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+.intro-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Container for the text section (h3 and p) */
+.im {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+    margin-top: 20px; /* Adds space above */
+    padding: 20px; /* Adds spacing inside the container */
+    animation: gradientAnimation 5s ease infinite; /* Gradient animation for the background */
+    transition: background 0.5s ease; /* Smooth transition for hover effects */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+}
+
+/* Styling for the heading (h3) */
+.im h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px; /* Space between the heading and paragraph */
+    font-family: 'Poppins', sans-serif; /* Modern font for heading */
+    animation: fadeIn 1s ease forwards, scaleUp 0.5s ease-in-out 0.5s forwards; /* Fade in with scale effect */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.im h3:hover {
+    color: #ffd700; /* Gold color on hover */
+    transform: scale(1.1); /* Slightly enlarge the heading */
+}
+
+/* Styling for the paragraph */
+.im p {
+    font-size: 1.2rem;
+    color: #09ef15;
+    padding: 20px;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif; /* Clean, readable font for the paragraph */
+    max-width: 800px; /* Optional max-width for the text */
+    animation: fadeIn 1s ease forwards, slideUp 0.5s ease-in-out 1s forwards; /* Fade in and slide-up effect */
+    text-align: justify; /* Justify the text */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.im p:hover {
+    color: #1e90ff; /* Dodger blue color on hover */
+    transform: translateY(-5px); /* Slight upward motion */
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff7f50, #ff1493, #8a2be2);
+    }
+    50% {
+        background: linear-gradient(45deg, #8a2be2, #ff1493, #ff7f50);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff7f50, #ff1493, #8a2be2);
+    }
+}
+
+/* Fade-in animation for the text */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scale-up effect for the heading */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Slide-up effect for the paragraph */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+ h2 {
+    font-family: 'Roboto', sans-serif; /* Change to a more modern font */
+    font-size: 2.5rem; /* Adjust font size */
+    color: orangered; /* Inherit color from parent (keeps color change intact) */
+    text-align: center; /* Centers the heading */
+    margin: 20px 0; /* Adds margin for spacing */
+    font-weight: bold; /* Makes the text bold */
+    letter-spacing: 2px; /* Adds slight spacing between letters */
+    transition: font-size 0.3s ease-in-out, letter-spacing 0.3s ease-in-out; /* Smooth transition for font-size and letter-spacing */
+}
+
+/* Example hover effect for interactive feel */
+h2:hover {
+    font-size: 2.8rem; /* Slight increase in size on hover */
+    letter-spacing: 3px; /* Slightly increased letter-spacing on hover */
+}
+
+
+/* Container for skill cards */
+.skill-con {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap into new rows */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
+}
+
+/* Individual skill card styling */
+.skill-card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Pseudo-element for overlay */
+.skill-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent; /* Initially transparent */
+    z-index: 2; /* Places it above the image */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect on skill card */
+.skill-card:hover::before {
+    background: linear-gradient(45deg, rgb(214, 36, 128), rgb(26, 5, 247), crimson, rgb(0, 0, 0)); /* Linear gradient on hover */
+}
+
+/* Text overlay on top of the image (initially hidden) */
+.skill-card h3, 
+.skill-card p {
+    position: absolute;
+    left: 20px;
+    color: #fff;
+    z-index: 3; /* Make sure text is above the overlay */
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Title style */
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 190px;
+}
+
+/* Paragraph style */
+.skill-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Background image for the skill card */
+.skill-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on image */
+.skill-card:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    filter: brightness(70%); /* Darkens the image for better text readability */
+}
+
+/* Hover effect on text */
+.skill-card:hover h3 {
+    opacity: 1;
+}
+
+.skill-card:hover p {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+/* Prevent overlapping: Stack text elements vertically */
+.skill-card h3 {
+    bottom: 60px;
+}
+
+.skill-card p {
+    bottom: 20px;
+}
+
+/* Hover effect: Add a box-shadow */
+.skill-card:hover {
+    box-shadow: 0 10px 30px rgba(210, 36, 36, 0.3); /* Adds shadow on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.project {
+    text-align: center;
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  .project h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .project span {
+    color: #007bff;
+  }
+  
+  /* Card container */
+  .project-con {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual card */
+  .card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: rotateY(20deg);
+  }
+  
+  /* Icon/Image section */
+  .card .icon {
+    position: relative;
+    height: 80%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #9bf806;
+    transition: transform 0.5s ease;
+  }
+  
+  .card .icon img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .icon img {
+    opacity: 0;
+  }
+  
+  /* Text section (appears on hover) */
+  .card .front {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    background:linear-gradient(45deg, rgb(246, 8, 131), rgb(124, 246, 3), rgb(248, 3, 52), rgb(0, 0, 0)); /* Linear gradient on hover */
+
+    color: #fff;
+  }
+  
+  .card:hover .front {
+    transform: translateY(0);
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
